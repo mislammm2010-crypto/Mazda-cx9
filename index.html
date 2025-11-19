@@ -5,122 +5,98 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Söhbət Qrupu Mazda CX-9</title>
 <style>
-/* Общие стили и фон */
+/* Стилизация под Taplink */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background: #f4f4f4; /* Светлый фон основной части */
+    background: #fff; /* Обычно Taplink имеет белый фон */
     text-align: center;
+    padding: 20px 0; /* Общий отступ сверху и снизу */
 }
 
-/* Стили для черного хедера */
-.header {
-    background: #000; /* Черный фон */
-    padding: 10px 20px;
-    display: flex;
-    justify-content: space-between; /* Распределение элементов */
-    align-items: center;
-    color: #fff; /* Белый текст в хедере */
-    font-size: 18px;
+/* Заголовок Taplink-стиля */
+.taplink-header {
+    padding: 0 20px 20px 20px;
+    color: #000;
 }
 
-.header h2 {
+.taplink-header h1 {
     margin: 0;
+    font-size: 24px;
     font-weight: bold;
 }
 
-.whatsapp-icon-link {
-    text-decoration: none;
-    /* Чтобы иконка Ватсап в хедере выглядела как на фото */
-}
-
-.whatsapp-icon-link img {
-    width: 28px; /* Немного меньше, как на фото */
-    height: 28px;
-    background: #fff; /* Белый фон вокруг иконки */
-    border-radius: 50%;
-    padding: 2px;
-    box-sizing: border-box;
-}
-
-/* Стили для кнопки чата */
+/* Стили для кнопки чата (Taplink style) */
 .top-buttons {
-    padding: 10px 10px 0 10px; /* Только верхний отступ */
-    background: #f4f4f4; /* Фон между хедером и кнопкой */
+    padding: 0 20px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px; /* Увеличенный зазор между блоками */
+    margin-bottom: 20px;
 }
 
 .whatsapp-button {
     text-decoration: none;
-    padding: 14px;
-    border-radius: 8px; /* Более мягкое скругление */
-    font-weight: 600; /* Более жирный шрифт */
+    padding: 16px;
+    border-radius: 12px; /* Сильное скругление - ключевой элемент Taplink */
+    font-weight: bold;
     font-size: 16px;
     color: #fff;
     display: block;
-    background: #25d366; /* Яркий зеленый цвет Ватсапа */
-    margin: 0 auto; /* Центрирование */
-    width: 95%;
+    background: #25d366; 
+    margin: 0 auto;
+    width: 100%;
     max-width: 600px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-
-.telegram-button {
-    /* Кнопка Телеграм убрана, но оставляю класс на случай, если вы передумаете */
-    display: none; 
-}
-
-/* Стили для основного блока FAQ */
-.block {
-    background: #fff;
-    margin: 10px auto;
-    width: 95%;
-    max-width: 600px;
-    border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    text-align: left;
-    overflow: hidden; /* Важно для скругления углов */
 }
 
-/* Стили для заголовков-кнопок */
+/* Стили для блока FAQ (Taplink style) */
+.block {
+    background: none; /* Убираем фон у общего контейнера */
+    margin: 0 auto;
+    width: 90%; /* Ширина, чтобы были отступы по краям */
+    max-width: 600px;
+    box-shadow: none;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Промежуток между белыми карточками FAQ */
+}
+
+/* Стили для заголовков-кнопок FAQ (Taplink style - каждая как отдельная карточка) */
+.faq-card {
+    background: #fff;
+    border-radius: 12px; /* Скругление карточки */
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1); /* Легкая тень */
+    overflow: hidden;
+}
+
 .collapsible {
     background: #fff;
     color: #111;
     cursor: pointer;
-    padding: 12px 15px; /* Немного больше отступов */
+    padding: 15px;
     border: none;
-    border-bottom: 1px solid #eee; /* Более светлый разделитель */
     width: 100%;
     text-align: left;
-    font-size: 15px;
+    font-size: 16px;
     display: flex;
     align-items: center;
     gap: 10px;
-    box-sizing: border-box; /* Для корректных размеров */
-}
-
-.collapsible:last-child {
-    border-bottom: none; /* Убрать границу у последнего элемента */
+    box-sizing: border-box;
+    font-weight: 500; /* Средняя жирность */
 }
 
 .collapsible span {
-    font-weight: normal; /* Обычный шрифт, как на фото */
+    font-weight: 500;
 }
 
-/* Стиль для эмодзи в первом блоке */
-.collapsible-first-item {
-    font-size: 18px; 
-}
-
-/* Стили для содержимого */
+/* Стиль для открытого контента */
 .content {
-    padding: 10px 15px 10px 15px;
+    padding: 0 15px 15px 15px;
     display: none;
     overflow: hidden;
-    background: #fff; /* Белый фон содержимого */
-    border-bottom: 1px solid #eee; /* Разделитель после открытого контента */
+    background: #fff;
     font-size: 14px;
     color: #333;
 }
@@ -128,77 +104,88 @@ body {
 .content p, .content ul {
     margin: 5px 0;
 }
-
 </style>
 </head>
 <body>
 
-<div class="header">
-  <h2>Söhbət Qrupu Mazda CX-9</h2>
-  <a class="whatsapp-icon-link" href="https://chat.whatsapp.com/KXNDRzr1JfAEwviBFaAumV?mode=hqrt3" target="_blank">
-    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
-  </a>
+<div class="taplink-header">
+  <h1>Söhbət Qrupu Mazda CX-9</h1>
 </div>
 
 <div class="top-buttons">
   <a class="whatsapp-button" href="https://chat.whatsapp.com/KXNDRzr1JfAEwviBFaAumV?mode=hqrt3" target="_blank">WhatsApp Chat</a>
-  </div>
+</div>
 
 <div class="block">
-  <button class="collapsible">
-    <span class="collapsible-first-item">👍 Kontaktlar, Bakı STO-lar</span> 
-  </button>
-  <div class="content">
-    <p>+994 77 600 05 10</p>
+  
+  <div class="faq-card">
+    <button class="collapsible"><span>👍 Kontaktlar, Bakı STO-lar</span></button>
+    <div class="content">
+      <p>+994 77 600 05 10</p>
+    </div>
   </div>
 
-  <button class="collapsible"><span>+ Nəyi DVS-də əlavə etmək?</span></button>
-  <div class="content">
-    <p>İstəyinizə uyğun 5W30, API SL/CF, ILSAC GF-4 və GF-5, ACEA A5/B5 tələblərinə cavab verir. Tam həcm 5.9L, filtr dəyişərkən 5.2L, filtr olmadan 4.7L.</p>
+  <div class="faq-card">
+    <button class="collapsible"><span>+ Nəyi DVS-də əlavə etmək?</span></button>
+    <div class="content">
+      <p>İstəyinizə uyğun 5W30, API SL/CF, ILSAC GF-4 və GF-5, ACEA A5/B5 tələblərinə cavab verir. Tam həcm 5.9L, filtr dəyişərkən 5.2L, filtr olmadan 4.7L.</p>
+    </div>
+  </div>
+  
+  <div class="faq-card">
+    <button class="collapsible"><span>+ Hansı soyuducu maye (OЖ) DVS-də?</span></button>
+    <div class="content">
+      <p>Original FL22 (Ford markası) və ya G12, rəng: yaşıl. Radiator dəyişərkən 7−8 litr, tam həcm 12 litr. Markalar: FL22 (original), TCL, Akira, Mobil, Revanol FL22. Antifrizdə qənaət etməyin, ucuz markalardan çəkinin (məsələn, AGA), çünki alüminium oksidləşir.</p>
+    </div>
+  </div>
+  
+  <div class="faq-card">
+    <button class="collapsible"><span>+ Nəyi AKPP-də əlavə etmək?</span></button>
+    <div class="content">
+      <p>Hər hansı JWS3309. Qismən dəyişmə 4L, filtr dəyişərkən 8L.<br>
+      Markalar: Toyota T4 (təklif edilmir), Idemtsu TLX, Ravenol və digər.</p>
+    </div>
+  </div>
+  
+  <div class="faq-card">
+    <button class="collapsible"><span>+ Nəyi GUR-də əlavə etmək?</span></button>
+    <div class="content">
+      <p>1. AKPP-dəki kimi, həcm 2L.<br>
+         2. Mazda Original Oil ATF M-V<br>
+         3. Mazda Original Oil Dexron M3<br>
+         4. GUR üçün PSF tipli yağ istifadə olunur. Ravenol və digər markalarda var.</p>
+    </div>
+  </div>
+  
+  <div class="faq-card">
+    <button class="collapsible"><span>+ Nəyi transfer qutusunda əlavə etmək?</span></button>
+    <div class="content">
+      <p>Hər hansı 75−80w140 GL5, həcm 550ml/650ml/850ml. Markalar: Revanol, Motul, Castrol.</p>
+    </div>
   </div>
 
-  <button class="collapsible"><span>+ Hansı soyuducu maye (OЖ) DVS-də?</span></button>
-  <div class="content">
-    <p>Original FL22 (Ford markası) və ya G12, rəng: yaşıl. Radiator dəyişərkən 7−8 litr, tam həcm 12 litr. Markalar: FL22 (original), TCL, Akira, Mobil, Revanol FL22. Antifrizdə qənaət etməyin, ucuz markalardan çəkinin (məsələn, AGA), çünki alüminium oksidləşir.</p>
+  <div class="faq-card">
+    <button class="collapsible"><span>+ Nəyi diferencialda əlavə etmək?</span></button>
+    <div class="content">
+      <p>75−80w90, həcm 1L. Sintetik, mineral deyil.</p>
+    </div>
   </div>
-
-  <button class="collapsible"><span>+ Nəyi AKPP-də əlavə etmək?</span></button>
-  <div class="content">
-    <p>Hər hansı JWS3309. Qismən dəyişmə 4L, filtr dəyişərkən 8L.<br>
-    Markalar: Toyota T4 (təklif edilmir), Idemtsu TLX, Ravenol və digər.</p>
-  </div>
-
-  <button class="collapsible"><span>+ Nəyi GUR-də əlavə etmək?</span></button>
-  <div class="content">
-    <p>1. AKPP-dəki kimi, həcm 2L.<br>
-       2. Mazda Original Oil ATF M-V<br>
-       3. Mazda Original Oil Dexron M3<br>
-       4. GUR üçün PSF tipli yağ istifadə olunur. Ravenol və digər markalarda var.</p>
-  </div>
-
-  <button class="collapsible"><span>+ Nəyi transfer qutusunda əlavə etmək?</span></button>
-  <div class="content">
-    <p>Hər hansı 75−80w140 GL5, həcm 550ml/650ml/850ml. Markalar: Revanol, Motul, Castrol.</p>
-  </div>
-
-  <button class="collapsible"><span>+ Nəyi diferencialda əlavə etmək?</span></button>
-  <div class="content">
-    <p>75−80w90, həcm 1L. Sintetik, mineral deyil.</p>
-  </div>
-
-  <button class="collapsible"><span>+ Yanacaq sərfi necədir?</span></button>
-  <div class="content">
-    <ul>
-      <li>Sürmə tərzi</li>
-      <li>Yanacaq keyfiyyəti</li>
-      <li>Inyektorlar və yanacaq sistemi vəziyyəti</li>
-      <li>Sveçlər, hava kütləsi sensörü, oksigen sensorları</li>
-      <li>Hava filtri, boğaz klapanı</li>
-      <li>DVS vəziyyəti</li>
-      <li>Əyləc kaliperləri vəziyyəti</li>
-      <li>Şəhər rejimi</li>
-    </ul>
-    <p>Ən önəmli səbəb adətən sürmə tərzidir.</p>
+  
+  <div class="faq-card">
+    <button class="collapsible"><span>+ Yanacaq sərfi necədir?</span></button>
+    <div class="content">
+      <ul>
+        <li>Sürmə tərzi</li>
+        <li>Yanacaq keyfiyyəti</li>
+        <li>Inyektorlar və yanacaq sistemi vəziyyəti</li>
+        <li>Sveçlər, hava kütləsi sensörü, oksigen sensorları</li>
+        <li>Hava filtri, boğaz klapanı</li>
+        <li>DVS vəziyyəti</li>
+        <li>Əyləc kaliperləri vəziyyəti</li>
+        <li>Şəhər rejimi</li>
+      </ul>
+      <p>Ən önəmli səbəb adətən sürmə tərzidir.</p>
+    </div>
   </div>
 </div>
 
@@ -208,6 +195,7 @@ for (var i = 0; i < coll.length; i++) {
   coll[i].addEventListener("click", function() {
     this.classList.toggle("active");
     var content = this.nextElementSibling;
+    // Toggle display of the content
     if (content.style.display === "block") {
       content.style.display = "none";
     } else {
