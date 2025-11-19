@@ -5,71 +5,107 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Mazda CX-9 Azərbaycan</title>
 <style>
-  body {margin:0;font-family:Arial,sans-serif;background:#f4f4f4;text-align:center;}
-  .header {background:#000;color:#fff;padding:40px 20px;font-size:28px;font-weight:bold;}
-  .avatar img {width:260px;margin:25px auto;border-radius:20px;box-shadow:0 4px 14px rgba(0,0,0,0.25);display:block;}
-  .block {background:#fff;margin:20px auto;width:90%;max-width:500px;border-radius:16px;padding:20px;box-shadow:0 4px 14px rgba(0,0,0,0.1);text-align:left;}
-  .btn {display:block;background:#c40000;color:#fff;padding:12px;border-radius:10px;margin:10px 0;text-decoration:none;font-weight:bold;transition:0.3s;font-size:16px;text-align:center;}
-  .btn:hover {background:#a50000;}
-  h2 {text-align:center;}
-  p {margin:10px 0;line-height:1.5;}
-  ul {padding-left:20px;margin:10px 0;}
+body {margin:0;font-family:Arial,sans-serif;background:#f4f4f4;text-align:center;}
+.header {background:#000;color:#fff;padding:40px 20px;font-size:28px;font-weight:bold;display:flex;align-items:center;justify-content:center;gap:10px;}
+.header img {width:32px;height:32px;cursor:pointer;}
+.block {background:#fff;margin:20px auto;width:90%;max-width:600px;border-radius:16px;padding:10px;box-shadow:0 4px 14px rgba(0,0,0,0.1);text-align:left;}
+.collapsible {background:#c40000;color:white;cursor:pointer;padding:12px;border:none;border-radius:10px;width:100%;text-align:left;font-size:16px;font-weight:bold;margin:5px 0;}
+.active, .collapsible:hover {background:#a50000;}
+.content {padding:0 18px;display:none;overflow:hidden;background-color:#f9f9f9;border-radius:0 0 10px 10px;margin-bottom:10px;}
+.content p, .content ul {margin:10px 0;}
 </style>
 </head>
 <body>
 
-<div class="header">Mazda CX-9 Azərbaycan</div>
-
-<div class="avatar">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/2018_Mazda_CX-9_Sport_AWD_front_4.20.18.jpg/800px-2018_Mazda_CX-9_Sport_AWD_front_4.20.18.jpg" alt="Mazda CX-9">
+<div class="header">
+  Mazda CX-9 Azərbaycan
+  <a href="https://chat.whatsapp.com/KXNDRzr1JfAEwviBFaAumV?mode=hqrt3" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+  </a>
 </div>
 
 <div class="block">
-  <h2>Rəsmi CX-9 AZ Klubu</h2>
-  <p>Burada sürücülər təcrübə, texniki məlumat, servis məsləhətləri və dəstək paylaşırlar.</p>
+  <button class="collapsible">👉 Kontaktlar, Bakı SТО-lar</button>
+  <div class="content">
+    <p>+994 77 600 05 10</p>
+  </div>
+
+  <button class="collapsible">+ Nəyi DVS-də əlavə etmək?</button>
+  <div class="content">
+    <p>İstəyinizə uyğun 5W30, API SL/CF, ILSAC GF-4 və GF-5, ACEA A5/B5 tələblərinə cavab verir. Tam həcm 5.9L, filtr dəyişərkən 5.2L, filtr olmadan 4.7L.</p>
+  </div>
+
+  <button class="collapsible">+ Hansı soyuducu maye (OЖ) DVS-də?</button>
+  <div class="content">
+    <p>Original FL22 (Ford markası) və ya G12, rəng: yaşıl. Radiator dəyişərkən 7−8 litr, tam həcm 12 litr. Markalar: FL22 (original), TCL, Akira, Mobil, Revanol FL22. Antifrizdə qənaət etməyin, ucuz markalardan çəkinin (məsələn, AGA), çünki alüminium oksidləşir.</p>
+  </div>
+
+  <button class="collapsible">+ Nəyi AKPP-də əlavə etmək?</button>
+  <div class="content">
+    <p>Hər hansı JWS3309. Qismən dəyişmə 4L, filtr dəyişərkən 8L.<br>
+    Markalar: Toyota T4 (təklif edilmir), Idemtsu TLX, Ravenol və digər.</p>
+  </div>
+
+  <button class="collapsible">+ Nəyi GUR-də əlavə etmək?</button>
+  <div class="content">
+    <p>1. AKPP-dəki kimi, həcm 2L.<br>
+       2. Mazda Original Oil ATF M-V<br>
+       3. Mazda Original Oil Dexron M3<br>
+       4. GUR üçün PSF tipli yağ istifadə olunur. Ravenol və digər markalarda var.</p>
+  </div>
+
+  <button class="collapsible">+ Nəyi transfer qutusunda əlavə etmək?</button>
+  <div class="content">
+    <p>Hər hansı 75−80w140 GL5, həcm 550ml/650ml/850ml. Markalar: Revanol, Motul, Castrol.</p>
+  </div>
+
+  <button class="collapsible">+ Nəyi diferencialda əlavə etmək?</button>
+  <div class="content">
+    <p>75−80w90, həcm 1L. Sintetik, mineral deyil.</p>
+  </div>
+
+  <button class="collapsible">+ Yanacaq sərfi necədir?</button>
+  <div class="content">
+    <ul>
+      <li>Sürmə tərzi</li>
+      <li>Yanacaq keyfiyyəti</li>
+      <li>Inyektorlar və yanacaq sistemi vəziyyəti</li>
+      <li>Sveçlər, hava kütləsi sensörü, oksigen sensorları</li>
+      <li>Hava filtri, boğaz klapanı</li>
+      <li>DVS vəziyyəti</li>
+      <li>Əyləc kaliperləri vəziyyəti</li>
+      <li>Şəhər rejimi</li>
+    </ul>
+    <p>Ən önəmli səbəb adətən sürmə tərzidir.</p>
+  </div>
+
+  <button class="collapsible">+ Kontaktlar, Novosibirsk SТО-lar və ustalar</button>
+  <div class="content">
+    <p>Ustalar və təmir bölmələri üçün əlaqələr (diqqət: məlumatların yoxlanması tövsiyə olunur).</p>
+  </div>
+
+  <button class="collapsible">+ Avadanlıqlar, ehtiyat hissələri və digər nömrələr</button>
+  <div class="content">
+    <p>MAZDA CY0112611 - Uspokoyitel 1 əd<br>
+       MAZDA CY0112613A - Uspokoyitel 1 əd<br>
+       Ford və digər ehtiyat hissələri siyahısı – bax yuxarıdakı orijinal qeydələr.</p>
+  </div>
 </div>
 
-<div class="block">
-  <h2>Mühərrik və Yağlar</h2>
-  <ul>
-    <li>Yağ növü: 5W-30 sintetik</li>
-    <li>Yağ həcmi: 6.0 litr</li>
-    <li>Yağ dəyişmə intervalları: hər 10.000 km və ya ildə bir dəfə</li>
-    <li>Hava filtri: Orijinal Mazda, dəyişmək hər 20.000 km</li>
-    <li>Yanacaq filtri: hər 30.000 km dəyişilməlidir</li>
-  </ul>
-</div>
-
-<div class="block">
-  <h2>Transmissiya və Əyləc Sistemi</h2>
-  <ul>
-    <li>Transmissiya yağı: Mazda ATF-FZ, dəyişmək hər 60.000 km</li>
-    <li>Əyləc mayesi: DOT-4, dəyişmək hər 2 il</li>
-    <li>Əyləc pedalı testi: hər 10.000 km</li>
-  </ul>
-</div>
-
-<div class="block">
-  <h2>Rəng və Baxım</h2>
-  <p>Fara və arxa işıqlar üçün PPF və ya şəffaf qoruyucu plyonka tövsiyə olunur.  
-     Avtomobil polirovka edilərkən isti buxar ilə diqqətli olun.</p>
-</div>
-
-<div class="block">
-  <h2>Əlavə Məlumat və Təcrübə</h2>
-  <p>Forum üzvləri ilə texniki məsləhətləri paylaşmaq, sürət göstəriciləri, yanacaq sərfi və GBO (metan) parametrləri barədə danışmaq mümkündür.</p>
-</div>
-
-<div class="block">
-  <a class="btn" href="https://chat.whatsapp.com/KXNDRzr1JfAEwviBFaAumV?mode=hqrt3" target="_blank">WhatsApp Qrupu</a>
-  <a class="btn" href="https://instagram.com" target="_blank">Instagram Səhifəsi</a>
-  <a class="btn" href="https://youtube.com" target="_blank">YouTube Kanalı</a>
-  <a class="btn" href="https://t.me" target="_blank">Telegram Qrupu</a>
-</div>
-
-<div class="block">
-  <p>© 2025 Mazda CX-9 Azerbaijan Community</p>
-</div>
+<script>
+var coll = document.getElementsByClassName("collapsible");
+for (var i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
 
 </body>
 </html>
