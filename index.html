@@ -8,87 +8,133 @@
 /* Reset и основные стили */
 body {
     margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'; /* Имитация системного шрифта для Taplink */
-    background-color: #f6f6f6; /* Светло-серый фон, как на Taplink */
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    background-color: #f6f6f6; /* Светло-серый фон для FAQ */
     text-align: center;
     padding: 0;
 }
 
 /* Контейнер для центрирования и ограничения ширины */
 .container {
-    width: 90%;
     max-width: 600px;
     margin: 0 auto;
-    padding-top: 20px;
 }
 
-/* Заголовок (Хедер) */
+/* Верхняя секция (Хедер + Кнопки Чата) - Черный фон */
+.top-section-wrapper {
+    background-color: #000; /* Черный фон */
+    padding-bottom: 30px; /* Отступ после кнопок */
+    margin-bottom: -15px; /* Залезаем немного на FAQ блоки, чтобы скрыть переход */
+}
+
+/* Элементы хедера (Логотип и текст) */
 .taplink-header {
-    padding: 20px 0;
+    padding: 20px 20px 10px 20px;
+    color: #fff;
+}
+
+.logo {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #fff; /* Белый круг */
+    border-radius: 50%;
+    margin: 0 auto 5px auto;
+    /* Имитация логотипа Mazda. В реальном проекте здесь будет <img> */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
     color: #000;
 }
 
 .taplink-header h1 {
     margin: 0;
-    font-size: 26px; /* Чуть крупнее */
-    font-weight: 700; /* Более жирный */
+    font-size: 14px;
+    font-weight: 500;
 }
+.taplink-header h2 {
+    margin-top: 5px;
+    font-size: 26px; /* Заголовок, который вы просили */
+    font-weight: 700; 
+}
+
 
 /* Стили для кнопок чата */
 .top-buttons {
     display: flex;
     flex-direction: column;
-    gap: 12px; /* Уменьшаем зазор, как на целевом сайте */
-    margin-bottom: 25px; /* Отступ перед FAQ блоками */
+    gap: 12px;
+    width: 90%;
+    margin: 20px auto 0 auto;
+}
+
+.chat-button {
+    text-decoration: none;
+    padding: 16px 20px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+    transition: background-color 0.2s;
+}
+
+.chat-button .main-text {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.chat-button .sub-text {
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 2px;
 }
 
 .whatsapp-button {
-    text-decoration: none;
-    padding: 18px 20px; /* Увеличенная высота кнопки */
-    border-radius: 12px; /* Сильное скругление */
-    font-weight: 600; 
-    font-size: 16px;
-    color: #fff;
-    display: block;
-    background: #25d366; /* Яркий зеленый */
-    box-shadow: 0 4px 6px rgba(37, 211, 102, 0.3); /* Легкая тень от зеленой кнопки */
-    transition: background-color 0.2s;
+    background: #25d366; 
 }
-.whatsapp-button:active {
-    background: #1eaf53;
+.telegram-button {
+    background: #0088cc;
 }
 
-/* Стили для FAQ-блоков (Taplink-карточек) */
+/* Секция FAQ */
 .block {
     display: flex;
     flex-direction: column;
-    gap: 12px; /* Зазор между карточками */
-    margin-bottom: 20px;
+    gap: 12px;
+    width: 90%;
+    margin: 0 auto 20px auto;
 }
 
 .faq-card {
     background: #fff;
-    border-radius: 12px; /* Скругление карточки */
-    box-shadow: 0 1px 3px rgba(0,0,0,0.05); /* Очень легкая тень */
+    border-radius: 12px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
     overflow: hidden;
 }
 
-/* Стили для заголовков-кнопок FAQ */
 .collapsible {
     background: #fff;
     color: #000;
     cursor: pointer;
-    padding: 16px 20px; /* Увеличенные отступы */
+    padding: 16px 20px;
     border: none;
     width: 100%;
     text-align: left;
     font-size: 16px;
     display: flex;
     align-items: center;
-    justify-content: space-between; /* Распределяем содержимое для стрелки справа */
+    justify-content: space-between;
     box-sizing: border-box;
     font-weight: 500;
-    border-bottom: 1px solid transparent; /* Убираем видимую границу */
 }
 
 .collapsible-text {
@@ -105,7 +151,7 @@ body {
 
 /* Иконка стрелки для закрытого состояния */
 .arrow::after {
-    content: '▶'; /* Треугольник или стрелка */
+    content: '▶'; 
     font-size: 10px;
     color: #aaa;
     transition: transform 0.2s;
@@ -119,14 +165,14 @@ body {
 
 /* Стиль для открытого контента */
 .content {
-    padding: 0 20px 20px 20px; /* Отступы совпадают с кнопкой */
+    padding: 0 20px 20px 20px;
     display: none;
     overflow: hidden;
     background: #fff;
     font-size: 14px;
     color: #333;
     line-height: 1.5;
-    text-align: justify; /* Выравнивание текста */
+    text-align: left; /* Выравнивание текста */
 }
 
 .content p, .content ul {
@@ -138,12 +184,24 @@ body {
 
 <div class="container">
   
-  <div class="taplink-header">
-    <h1>Söhbət Qrupu Mazda CX-9</h1>
-  </div>
+  <div class="top-section-wrapper">
+    <div class="taplink-header">
+      <div class="logo">M</div>
+      <h1>cx9tb</h1>
+      <h2>Söhbət Qrupu Mazda CX-9</h2>
+    </div>
 
-  <div class="top-buttons">
-    <a class="whatsapp-button" href="https://chat.whatsapp.com/KXNDRzr1JfAEwviBFaAumV?mode=hqrt3" target="_blank">WhatsApp Chat</a>
+    <div class="top-buttons">
+      <a class="chat-button whatsapp-button" href="https://chat.whatsapp.com/KXNDRzr1JfAEwviBFaAumV?mode=hqrt3" target="_blank">
+        <span class="main-text">WhatsApp Chat</span>
+        <span class="sub-text">Söhbət Qrupu</span>
+      </a>
+
+      <a class="chat-button telegram-button" href="#" target="_blank">
+        <span class="main-text">Telegram Chat</span>
+        <span class="sub-text">Əlavə söhbət</span>
+      </a>
+    </div>
   </div>
 
   <div class="block">
