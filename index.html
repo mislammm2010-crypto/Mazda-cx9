@@ -3,38 +3,151 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mazda CX-9 Azərbaycan</title>
+<title>Söhbət Qrupu Mazda CX-9</title>
 <style>
-body {margin:0;font-family:Arial,sans-serif;background:#f4f4f4;text-align:center;}
-.header {padding:20px;display:flex;justify-content:center;align-items:center;gap:10px;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,0.1);}
-.header img {width:36px;height:36px;cursor:pointer;}
-.top-buttons {display:flex;flex-direction:column;gap:10px;padding:10px 20px;}
-.top-buttons a {text-decoration:none;padding:14px;border-radius:10px;font-weight:bold;color:#fff;display:block;}
-.whatsapp {background:#25d366;}
-.telegram {background:#0088cc;}
-.block {background:#fff;margin:10px auto;width:95%;max-width:600px;border-radius:10px;box-shadow:0 2px 8px rgba(0,0,0,0.1);text-align:left;}
-.collapsible {background:#fff;color:#111;cursor:pointer;padding:12px;border:none;border-bottom:1px solid #ddd;width:100%;text-align:left;font-size:16px;display:flex;align-items:center;gap:10px;}
-.collapsible span {font-weight:bold;}
-.content {padding:10px 18px;display:none;overflow:hidden;background:#f9f9f9;border-radius:0 0 10px 10px;margin-bottom:5px;}
-.content p, .content ul {margin:5px 0;}
+/* Общие стили и фон */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4; /* Светлый фон основной части */
+    text-align: center;
+}
+
+/* Стили для черного хедера */
+.header {
+    background: #000; /* Черный фон */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between; /* Распределение элементов */
+    align-items: center;
+    color: #fff; /* Белый текст в хедере */
+    font-size: 18px;
+}
+
+.header h2 {
+    margin: 0;
+    font-weight: bold;
+}
+
+.whatsapp-icon-link {
+    text-decoration: none;
+    /* Чтобы иконка Ватсап в хедере выглядела как на фото */
+}
+
+.whatsapp-icon-link img {
+    width: 28px; /* Немного меньше, как на фото */
+    height: 28px;
+    background: #fff; /* Белый фон вокруг иконки */
+    border-radius: 50%;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+/* Стили для кнопки чата */
+.top-buttons {
+    padding: 10px 10px 0 10px; /* Только верхний отступ */
+    background: #f4f4f4; /* Фон между хедером и кнопкой */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.whatsapp-button {
+    text-decoration: none;
+    padding: 14px;
+    border-radius: 8px; /* Более мягкое скругление */
+    font-weight: 600; /* Более жирный шрифт */
+    font-size: 16px;
+    color: #fff;
+    display: block;
+    background: #25d366; /* Яркий зеленый цвет Ватсапа */
+    margin: 0 auto; /* Центрирование */
+    width: 95%;
+    max-width: 600px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.telegram-button {
+    /* Кнопка Телеграм убрана, но оставляю класс на случай, если вы передумаете */
+    display: none; 
+}
+
+/* Стили для основного блока FAQ */
+.block {
+    background: #fff;
+    margin: 10px auto;
+    width: 95%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    text-align: left;
+    overflow: hidden; /* Важно для скругления углов */
+}
+
+/* Стили для заголовков-кнопок */
+.collapsible {
+    background: #fff;
+    color: #111;
+    cursor: pointer;
+    padding: 12px 15px; /* Немного больше отступов */
+    border: none;
+    border-bottom: 1px solid #eee; /* Более светлый разделитель */
+    width: 100%;
+    text-align: left;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    box-sizing: border-box; /* Для корректных размеров */
+}
+
+.collapsible:last-child {
+    border-bottom: none; /* Убрать границу у последнего элемента */
+}
+
+.collapsible span {
+    font-weight: normal; /* Обычный шрифт, как на фото */
+}
+
+/* Стиль для эмодзи в первом блоке */
+.collapsible-first-item {
+    font-size: 18px; 
+}
+
+/* Стили для содержимого */
+.content {
+    padding: 10px 15px 10px 15px;
+    display: none;
+    overflow: hidden;
+    background: #fff; /* Белый фон содержимого */
+    border-bottom: 1px solid #eee; /* Разделитель после открытого контента */
+    font-size: 14px;
+    color: #333;
+}
+
+.content p, .content ul {
+    margin: 5px 0;
+}
+
 </style>
 </head>
 <body>
 
 <div class="header">
-  <h2>Mazda CX-9 Azərbaycan</h2>
-  <a href="https://chat.whatsapp.com/KXNDRzr1JfAEwviBFaAumV?mode=hqrt3" target="_blank">
+  <h2>Söhbət Qrupu Mazda CX-9</h2>
+  <a class="whatsapp-icon-link" href="https://chat.whatsapp.com/KXNDRzr1JfAEwviBFaAumV?mode=hqrt3" target="_blank">
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
   </a>
 </div>
 
 <div class="top-buttons">
-  <a class="whatsapp" href="https://chat.whatsapp.com/KXNDRzr1JfAEwviBFaAumV?mode=hqrt3" target="_blank">WhatsApp Chat</a>
-  <a class="telegram" href="#" target="_blank">Telegram Chat</a>
-</div>
+  <a class="whatsapp-button" href="https://chat.whatsapp.com/KXNDRzr1JfAEwviBFaAumV?mode=hqrt3" target="_blank">WhatsApp Chat</a>
+  </div>
 
 <div class="block">
-  <button class="collapsible"><span>👉 Kontaktlar, Bakı SТО-lar</span></button>
+  <button class="collapsible">
+    <span class="collapsible-first-item">👍 Kontaktlar, Bakı STO-lar</span> 
+  </button>
   <div class="content">
     <p>+994 77 600 05 10</p>
   </div>
