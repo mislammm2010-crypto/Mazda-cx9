@@ -33,15 +33,15 @@ body {
     color: #fff;
 }
 
-/* Измененные стили для логотипа */
+/* Логотип */
 .logo {
     display: block;
-    width: 60px; /* Ширина для сохранения круглой формы */
-    height: 60px; /* Высота для сохранения круглой формы */
+    width: 60px;
+    height: 60px;
     background-color: #fff;
-    border-radius: 50%; /* Сделать круглым */
+    border-radius: 50%;
     margin: 0 auto 5px auto;
-    overflow: hidden; /* Обрезать изображение по кругу */
+    overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,8 +50,8 @@ body {
 .logo img {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Заполнение круга изображением, обрезая лишнее */
-    border-radius: 50%; /* На всякий случай, чтобы изображение тоже было круглым */
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .taplink-header h1 {
@@ -106,9 +106,6 @@ body {
 /* Rəng sxemi */
 .whatsapp-main { background: #25d366; }
 .telegram-main { background: #0088cc; }
-.whatsapp-fludilka { background: #4c4c4c; }
-.telegram-baraholka { background: #6a6a6a; }
-.buy-reports { background: #8b8b8b; }
 
 /* FAQ bölməsinin stilləri */
 .block {
@@ -117,6 +114,29 @@ body {
     gap: 12px;
     width: 90%;
     margin: 0 auto 20px auto;
+}
+
+/* Разделитель между логическими блоками */
+.section-divider {
+    border: none;
+    height: 1px;
+    margin: 25px 0 15px 0;
+    background-color: #ddd;
+    position: relative;
+}
+
+.section-divider h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0 15px;
+    background-color: #f6f6f6; /* Цвет фона body */
+    color: #666;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 .faq-card {
@@ -177,17 +197,15 @@ body {
     text-align: left;
 }
 
-.content p, .content ul {
+.content p, .content ul, .content ol {
     margin: 5px 0;
 }
-.content ul {
+.content ul, .content ol {
     padding-left: 20px;
 }
 .content strong {
     font-weight: 600;
 }
-
-/* Yeni əlavə edilmiş kontent üçün əlavə stillər */
 .content h4 {
     margin-top: 10px;
     margin-bottom: 5px;
@@ -225,6 +243,8 @@ body {
   </div>
 
   <div class="block">
+    
+    <div class="section-divider"><h3>KONTAKTLAR</h3></div>
 
     <div class="faq-card">
       <button class="collapsible">
@@ -248,6 +268,8 @@ body {
       </div>
     </div>
     
+    <div class="section-divider"><h3>MAYELƏR (YAĞLAR)</h3></div>
+
     <div class="faq-card">
       <button class="collapsible">
         <span class="collapsible-text"><span class="collapsible-icon">+</span> Mühərrikə hansı yağ tökülməlidir?</span>
@@ -311,104 +333,19 @@ body {
         <p><span style="color: black;">"<strong>75−80w90</strong>", həcm "<strong>1 litr</strong>". "<strong>Sintetik</strong>", mineral deyil.</span></p>
       </div>
     </div>
-    
-    <div class="faq-card">
-        <button class="collapsible">
-            <span class="collapsible-text"><span class="collapsible-icon">+</span> Suport təmiri üçün ehtiyat hissələri</span>
-            <span class="arrow"></span>
-        </button>
-        <div class="content">
-            <h4>Ön suportların təmiri:</h4>
-            <ul>
-                <li><span style="color: black;">Əyləc Bəndi (Naklatka): <strong>KASHIYAMA D3142</strong></span></li>
-                <li><span style="color: black;">Porşen: <strong>FRENKİT P455304</strong></span></li>
-                <li><span style="color: black;">Napravlayuşi (Paleç): <strong>Frenkit 809008</strong></span></li>
-                <li><span style="color: black;">Rezinlər: <strong>Mazda L2Y63326Z</strong></span></li>
-            </ul>
-            <h4>Arxa suportların təmiri:</h4>
-            <ul>
-                <li><span style="color: black;">Əyləc Bəndi (Naklatka): <strong>Kashiyama D3143H</strong></span></li>
-                <li><span style="color: black;">Rezinlər: <strong>Mazda L2Y62646ZA</strong></span></li>
-                <li><span style="color: black;">Napravlayuşi (Paleç): <strong>Frenkit 809024</strong></span></li>
-                <li><span style="color: black;">Porşen: <strong>FRENKIT P434802</strong></span></li>
-            </ul>
-        </div>
-    </div>
 
     <div class="faq-card">
         <button class="collapsible">
-            <span class="collapsible-text"><span class="collapsible-icon">+</span> Əlavə açarları və immobilayzeri necə proqramlaşdırmaq olar?</span>
+            <span class="collapsible-text"><span class="collapsible-icon">+</span> Hansı və nə qədər soyuducu qaz (freon) lazımdır?</span>
             <span class="arrow"></span>
         </button>
         <div class="content">
-            <p><span style="color: black;">Kompüter vasitəsilə, <a href="https://forscan.org/" target="_blank">forscan.org</a> proqramı ilə. Genişləndirilmiş lisenziya tələb olunur (2 ay pulsuz verilir). Məlumat: <a href="https://www.drive2.ru/l/583490206091485640/" target="_blank">Drive2-də məlumat</a>.</span></p>
-        </div>
-    </div>
-
-    <div class="faq-card">
-        <button class="collapsible">
-            <span class="collapsible-text"><span class="collapsible-icon">+</span> Hansı əyləc disklərini quraşdırmaq lazımdır? (CX9 2008–2014)</span>
-            <span class="arrow"></span>
-        </button>
-        <div class="content">
-            <p><span style="color: black;">1. Əgər **dağlıq soyuq rayonları deyil** — büdcəyə uyğun istənilən disklər: Miles, Masuma, Bosh.</span></p>
-            <p><span style="color: black;">2. Əgər **dağlıq və soyuq rayonlarıdırsa** — ATE, Original, Zimerman, Brembo quraşdırmaq daha yaxşıdır.</span></p>
-            <p><span style="color: black;">3. P.S. Tayqa pisdir (zəifdir).</span></p>
-        </div>
-    </div>
-
-    <div class="faq-card">
-        <button class="collapsible">
-            <span class="collapsible-text"><span class="collapsible-icon">+</span> CX7-dən reduktor və mufta uyğun gəlirmi?</span>
-            <span class="arrow"></span>
-        </button>
-        <div class="content">
-            <p><span style="color: black;">Bəli, uyğun gəlir, amma MPS-dən quraşdırmaq daha da yaxşıdır və **özü özünə bloklanır** (əlavə olaraq).</span></p>
-        </div>
-    </div>
-
-    <div class="faq-card">
-        <button class="collapsible">
-            <span class="collapsible-text"><span class="collapsible-icon">+</span> Əgər 4WD işıq yanıb/sönürsə, nə etməli?</span>
-            <span class="arrow"></span>
-        </button>
-        <div class="content">
-            <p><span style="color: black;">1. Diferensialın gövdəsi fırlanma anını ön təkərlər arasında bölür.</span></p>
-            <p><span style="color: black;">2. Yükü daha asan olan təkərə ötürür və həmişə güc tətbiq edir.</span></p>
-            <p><span style="color: black;">3. Razdatka həmişə fırlanır, kardan valı həmişə hərəkətdədir.</span></p>
-            <p><span style="color: black;">4. Arxa təkərlər həmişə fırlanır, onlara fırlanma anının minimum 10%-i həmişə gedir.</span></p>
-            <p><span style="color: black;">5. Əgər ön təkərlər sürüşürsə, yaxud bucaq sürəti sensorları, ABS şübhələnirsə, elektromaqnit sıxılır və fırlanma anının 50%-ə qədəri arxaya ötürülür.</span></p>
-            <p><span style="color: black;">6. Əgər 2 ön təkər fırlanırsa, mütləq kardandan fırlanma olmalıdır.</span></p>
-            <p><span style="color: black;">7. Əgər 4WD daimi yanırsa, deməli, arxa viskomuftaya gedən naqil qırılıb.</span></p>
-            <p><span style="color: black;">8. 4WD-nin yanıb-sönməsi, məsələn, sürüşkən yolda qəfil sıçrayış zamanı baş verə bilər; sonra bu səhv keçirsə, bu o demək deyil ki, problem şlislərdədir, bu, elektronika səhvi ola bilər.</span></p>
-            <p><span style="color: black;">9. Əgər sürüşmə zamanı 4WD həmişə yanıb-sönürsə və kardandan ön təkərlər fırlanmırsa, şlisləri yoxlamaq lazımdır.</span></p>
-        </div>
-    </div>
-
-    <div class="faq-card">
-        <button class="collapsible">
-            <span class="collapsible-text"><span class="collapsible-icon">+</span> Razdatka sağ salnikdən yağ sızdırır, nə etməli?</span>
-            <span class="arrow"></span>
-        </button>
-        <div class="content">
-            <ul>
-                <li><span style="color: black;">Salnik: <strong>7T4Z-7R284-A</strong></span></li>
-                <li><span style="color: black;">Pılnik: <strong>12000699B</strong></span></li>
-                <li><span style="color: black;">Yağ: <strong>Ravenol 75W-140</strong></span></li>
-            </ul>
-        </div>
-    </div>
-
-    <div class="faq-card">
-        <button class="collapsible">
-            <span class="collapsible-text"><span class="collapsible-icon">+</span> Qapı tutacağındakı rezin düymənin nömrəsini deyin?</span>
-            <span class="arrow"></span>
-        </button>
-        <div class="content">
-            <p><span style="color: black;">TD12594B1A.</span></p>
+            <p><span style="color: black;">R-134a, 660–710 qr.</span></p>
         </div>
     </div>
     
+    <div class="section-divider"><h3>TEXNİKİ SUALLAR</h3></div>
+
     <div class="faq-card">
       <button class="collapsible">
         <span class="collapsible-text"><span class="collapsible-icon">+</span> Yanacaq sərfi necədir?</span>
@@ -453,6 +390,144 @@ body {
       </div>
     </div>
     
+    <div class="faq-card">
+        <button class="collapsible">
+            <span class="collapsible-text"><span class="collapsible-icon">+</span> Əgər 4WD işıq yanıb/sönürsə, nə etməli?</span>
+            <span class="arrow"></span>
+        </button>
+        <div class="content">
+            <p><span style="color: black;">1. Diferensialın gövdəsi fırlanma anını ön təkərlər arasında bölür.</span></p>
+            <p><span style="color: black;">2. Yükü daha asan olan təkərə ötürür və həmişə güc tətbiq edir.</span></p>
+            <p><span style="color: black;">3. Razdatka həmişə fırlanır, kardan valı həmişə hərəkətdədir.</span></p>
+            <p><span style="color: black;">4. Arxa təkərlər həmişə fırlanır, onlara fırlanma anının minimum 10%-i həmişə gedir.</span></p>
+            <p><span style="color: black;">5. Əgər ön təkərlər sürüşürsə, yaxud bucaq sürəti sensorları, ABS şübhələnirsə, elektromaqnit sıxılır və fırlanma anının 50%-ə qədəri arxaya ötürülür.</span></p>
+            <p><span style="color: black;">6. Əgər 2 ön təkər fırlanırsa, mütləq kardandan fırlanma olmalıdır.</span></p>
+            <p><span style="color: black;">7. Əgər 4WD daimi yanırsa, deməli, arxa viskomuftaya gedən naqil qırılıb.</span></p>
+            <p><span style="color: black;">8. 4WD-nin yanıb-sönməsi, məsələn, sürüşkən yolda qəfil sıçrayış zamanı baş verə bilər; sonra bu səhv keçirsə, bu o demək deyil ki, problem şlislərdədir, bu, elektronika səhvi ola bilər.</span></p>
+            <p><span style="color: black;">9. Əgər sürüşmə zamanı 4WD həmişə yanıb-sönürsə və kardandan ön təkərlər fırlanmırsa, şlisləri yoxlamaq lazımdır.</span></p>
+        </div>
+    </div>
+
+    <div class="faq-card">
+        <button class="collapsible">
+            <span class="collapsible-text"><span class="collapsible-icon">+</span> Yanacağın səviyyəsi düzgün göstərilmirsə, nə etməli?</span>
+            <span class="arrow"></span>
+        </button>
+        <div class="content">
+            <p><span style="color: black;">1. Cihaz panelini test edin (bax yuxarıda necə etməli). 2. Tam doldurun və cihaz panelinin necə davrandığına baxın. Yanacaq səviyyəsi sensorları müqavimət əsasında yoxlanılır. Əgər səviyyə sensorlarının diaqnostikası nəticə vermirsə, deməli problem cihaz panelindədir.</span></p>
+        </div>
+    </div>
+
+    <div class="faq-card">
+        <button class="collapsible">
+            <span class="collapsible-text"><span class="collapsible-icon">+</span> Chat istifadə edərək avtomobilin özü-özünü necə diaqnostika etmək olar?</span>
+            <span class="arrow"></span>
+        </button>
+        <div class="content">
+            <p><span style="color: black;">Özü-özünü diaqnostika virtual aparılmır. Üstəlik, internetdə ünsiyyət "canlı" diaqnostikanı əvəz etmir. Əksər hallarda siz fiziki iş görməli olacaqsınız, məsələn: avtomobilin altına girmək, yağ sızmasını yoxlamaq, reduktorda lyuftu ölçmək, avtomobili qaldırıb səs-küyün (uğultunun) haradan gəldiyini eşitmək və s.</span></p>
+        </div>
+    </div>
+
+    <div class="faq-card">
+        <button class="collapsible">
+            <span class="collapsible-text"><span class="collapsible-icon">+</span> Əlavə açarları və immobilayzeri necə proqramlaşdırmaq olar?</span>
+            <span class="arrow"></span>
+        </button>
+        <div class="content">
+            <p><span style="color: black;">Kompüter vasitəsilə, <a href="https://forscan.org/" target="_blank">forscan.org</a> proqramı ilə. Genişləndirilmiş lisenziya tələb olunur (2 ay pulsuz verilir). Məlumat: <a href="https://www.drive2.ru/l/583490206091485640/" target="_blank">Drive2-də məlumat</a>.</span></p>
+        </div>
+    </div>
+
+
+    <div class="section-divider"><h3>EHTİYAT HİSSƏLƏRİ</h3></div>
+    
+    <div class="faq-card">
+      <button class="collapsible">
+        <span class="collapsible-text"><span class="collapsible-icon">+</span> Suport təmiri üçün ehtiyat hissələri</span>
+        <span class="arrow"></span>
+      </button>
+      <div class="content">
+        <h4>Ön suportların təmiri:</h4>
+        <ul>
+            <li><span style="color: black;">Əyləc Bəndi (Naklatka): <strong>KASHIYAMA D3142</strong></span></li>
+            <li><span style="color: black;">Porşen: <strong>FRENKİT P455304</strong></span></li>
+            <li><span style="color: black;">Napravlayuşi (Paleç): <strong>Frenkit 809008</strong></span></li>
+            <li><span style="color: black;">Rezinlər: <strong>Mazda L2Y63326Z</strong></span></li>
+        </ul>
+        <h4>Arxa suportların təmiri:</h4>
+        <ul>
+            <li><span style="color: black;">Əyləc Bəndi (Naklatka): <strong>Kashiyama D3143H</strong></span></li>
+            <li><span style="color: black;">Rezinlər: <strong>Mazda L2Y62646ZA</strong></span></li>
+            <li><span style="color: black;">Napravlayuşi (Paleç): <strong>Frenkit 809024</strong></span></li>
+            <li><span style="color: black;">Porşen: <strong>FRENKIT P434802</strong></span></li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="faq-card">
+      <button class="collapsible">
+        <span class="collapsible-text"><span class="collapsible-icon">+</span> Hansı əyləc disklərini quraşdırmaq lazımdır? (CX9 2008–2014)</span>
+        <span class="arrow"></span>
+      </button>
+      <div class="content">
+        <p><span style="color: black;">1. Əgər **dağlıq soyuq rayonları deyil** — büdcəyə uyğun istənilən disklər: Miles, Masuma, Bosh.</span></p>
+        <p><span style="color: black;">2. Əgər **dağlıq və soyuq rayonlarıdırsa** — ATE, Original, Zimerman, Brembo quraşdırmaq daha yaxşıdır.</span></p>
+        <p><span style="color: black;">3. P.S. Tayqa pisdir (zəifdir).</span></p>
+      </div>
+    </div>
+
+    <div class="faq-card">
+        <button class="collapsible">
+            <span class="collapsible-text"><span class="collapsible-icon">+</span> Mühərrikin soyuducu ventilyatorları səs salır, nə etməli?</span>
+            <span class="arrow"></span>
+        </button>
+        <div class="content">
+            <p><span style="color: black;">**Dərhal əvəz etmək lazımdır.** Dəstlər (motorlar): <a href="https://sl.aliexpress.ru/p?key=XmNEZDF" target="_blank">AliExpress-də məlumat</a>. Diametr bərkidicilərsiz: 10.5, bərkidicilərlə: 12.5, hündürlük: 7.5. Həmçinin generator təmiri servisinə gedib, kolcu presləyib, təmizləyib, ola bilsin fırçaları (şotka) dəyişdirmək olar.</span></p>
+        </div>
+    </div>
+    
+    <div class="faq-card">
+        <button class="collapsible">
+            <span class="collapsible-text"><span class="collapsible-icon">+</span> Mazda CX-9 üçün hansı yay (prujin) analoqları mövcuddur?</span>
+            <span class="arrow"></span>
+        </button>
+        <div class="content">
+            <p><span style="color: black;"><strong>Nömrələr:</strong></span></p>
+            <ul>
+                <li><span style="color: black;"><strong>XP MZ213F</strong> — ön. Orijinal nömrə: <strong>TD76-34-011C</strong>.</span></li>
+                <li><span style="color: black;"><strong>XP MZ214R</strong> — arxa. Orijinal nömrə: <strong>TD13-28-011</strong>.</span></li>
+            </ul>
+            <p><span style="color: black;"><strong>RockAuto-da:</strong> <strong>81628 MOOG</strong> — arxa, <strong>81629 MOOG</strong> — ön.</span></p>
+            <p><span style="color: black;"><strong>MEVOTECH:</strong> <strong>SMS81629</strong> — ön, <strong>SMS81628</strong> — arxa.</span></p>
+        </div>
+    </div>
+
+    <div class="faq-card">
+        <button class="collapsible">
+            <span class="collapsible-text"><span class="collapsible-icon">+</span> Hansı vakuum gücləndiricisi analoqları mövcuddur?</span>
+            <span class="arrow"></span>
+        </button>
+        <div class="content">
+            <p><span style="color: black;"><strong>Orijinal Nömrələr:</strong> BA1Z2005A, BA1Z2005AVX, BT4Z2005A, AT4Z2005A, AT4Z2005AFC, BA1Z2005AFC, 8T4Z2005A.</span></p>
+            <p><span style="color: black;"><strong>Analoji Nömrələr:</strong> CARDONE 5472020, MOTORCRAFT BRB48, MAZDA TDY14380ZA.</span></p>
+            <p><span style="color: black;"><strong>Vacib:</strong> Analoq tapan olmayıb və almayıb. **Hər kəs orijinal quraşdırır.**</span></p>
+        </div>
+    </div>
+
+    <div class="faq-card">
+        <button class="collapsible">
+            <span class="collapsible-text"><span class="collapsible-icon">+</span> Hansı orijinal şüşə silən (dvornik) rezinləri mövcuddur?</span>
+            <span class="arrow"></span>
+        </button>
+        <div class="content">
+            <ul>
+                <li><span style="color: black;"><strong>Ön sol rezin:</strong> EG21-67-333.</span></li>
+                <li><span style="color: black;"><strong>Ön sağ rezin:</strong> TD12-67-333.</span></li>
+                <li><span style="color: black;"><strong>Arxa rezin:</strong> G22E-67-333.</span></li>
+            </ul>
+        </div>
+    </div>
+
     <div class="faq-card">
       <button class="collapsible">
         <span class="collapsible-text"><span class="collapsible-icon">+</span> 2007−2009-cu il üçün nasosun (pompa) dəyişdirilməsi üçün ehtiyat hissələrinin siyahısı</span>
@@ -622,86 +697,37 @@ body {
 
     <div class="faq-card">
         <button class="collapsible">
-            <span class="collapsible-text"><span class="collapsible-icon">+</span> Mühərrikin soyuducu ventilyatorları səs salır, nə etməli?</span>
-            <span class="arrow"></span>
-        </button>
-        <div class="content">
-            <p><span style="color: black;">**Dərhal əvəz etmək lazımdır.** Dəstlər (motorlar): <a href="https://sl.aliexpress.ru/p?key=XmNEZDF" target="_blank">AliExpress-də məlumat</a>. Diametr bərkidicilərsiz: 10.5, bərkidicilərlə: 12.5, hündürlük: 7.5. Həmçinin generator təmiri servisinə gedib, kolcu presləyib, təmizləyib, ola bilsin fırçaları (şotka) dəyişdirmək olar.</span></p>
-        </div>
-    </div>
-    
-    <div class="faq-card">
-        <button class="collapsible">
-            <span class="collapsible-text"><span class="collapsible-icon">+</span> Mazda CX-9 üçün hansı yay (prujin) analoqları mövcuddur?</span>
-            <span class="arrow"></span>
-        </button>
-        <div class="content">
-            <p><span style="color: black;"><strong>Nömrələr:</strong></span></p>
-            <ul>
-                <li><span style="color: black;"><strong>XP MZ213F</strong> — ön. Orijinal nömrə: <strong>TD76-34-011C</strong>.</span></li>
-                <li><span style="color: black;"><strong>XP MZ214R</strong> — arxa. Orijinal nömrə: <strong>TD13-28-011</strong>.</span></li>
-            </ul>
-            <p><span style="color: black;"><strong>RockAuto-da:</strong> <strong>81628 MOOG</strong> — arxa, <strong>81629 MOOG</strong> — ön.</span></p>
-            <p><span style="color: black;"><strong>MEVOTECH:</strong> <strong>SMS81629</strong> — ön, <strong>SMS81628</strong> — arxa.</span></p>
-        </div>
-    </div>
-
-    <div class="faq-card">
-        <button class="collapsible">
-            <span class="collapsible-text"><span class="collapsible-icon">+</span> Hansı vakuum gücləndiricisi analoqları mövcuddur?</span>
-            <span class="arrow"></span>
-        </button>
-        <div class="content">
-            <p><span style="color: black;"><strong>Orijinal Nömrələr:</strong> BA1Z2005A, BA1Z2005AVX, BT4Z2005A, AT4Z2005A, AT4Z2005AFC, BA1Z2005AFC, 8T4Z2005A.</span></p>
-            <p><span style="color: black;"><strong>Analoji Nömrələr:</strong> CARDONE 5472020, MOTORCRAFT BRB48, MAZDA TDY14380ZA.</span></p>
-            <p><span style="color: black;"><strong>Vacib:</strong> Analoq tapan olmayıb və almayıb. **Hər kəs orijinal quraşdırır.**</span></p>
-        </div>
-    </div>
-    
-    <div class="faq-card">
-        <button class="collapsible">
-            <span class="collapsible-text"><span class="collapsible-icon">+</span> Yanacağın səviyyəsi düzgün göstərilmirsə, nə etməli?</span>
-            <span class="arrow"></span>
-        </button>
-        <div class="content">
-            <p><span style="color: black;">1. Cihaz panelini test edin (bax yuxarıda necə etməli). 2. Tam doldurun və cihaz panelinin necə davrandığına baxın. Yanacaq səviyyəsi sensorları müqavimət əsasında yoxlanılır. Əgər səviyyə sensorlarının diaqnostikası nəticə vermirsə, deməli problem cihaz panelindədir.</span></p>
-        </div>
-    </div>
-    
-    <div class="faq-card">
-        <button class="collapsible">
-            <span class="collapsible-text"><span class="collapsible-icon">+</span> Hansı və nə qədər soyuducu qaz (freon) lazımdır?</span>
-            <span class="arrow"></span>
-        </button>
-        <div class="content">
-            <p><span style="color: black;">R-134a, 660–710 qr.</span></p>
-        </div>
-    </div>
-
-    <div class="faq-card">
-        <button class="collapsible">
-            <span class="collapsible-text"><span class="collapsible-icon">+</span> Hansı orijinal şüşə silən (dvornik) rezinləri mövcuddur?</span>
+            <span class="collapsible-text"><span class="collapsible-icon">+</span> Razdatka sağ salnikdən yağ sızdırır, nə etməli?</span>
             <span class="arrow"></span>
         </button>
         <div class="content">
             <ul>
-                <li><span style="color: black;"><strong>Ön sol rezin:</strong> EG21-67-333.</span></li>
-                <li><span style="color: black;"><strong>Ön sağ rezin:</strong> TD12-67-333.</span></li>
-                <li><span style="color: black;"><strong>Arxa rezin:</strong> G22E-67-333.</span></li>
+                <li><span style="color: black;">Salnik: <strong>7T4Z-7R284-A</strong></span></li>
+                <li><span style="color: black;">Pılnik: <strong>12000699B</strong></span></li>
+                <li><span style="color: black;">Yağ: <strong>Ravenol 75W-140</strong></span></li>
             </ul>
         </div>
     </div>
 
     <div class="faq-card">
         <button class="collapsible">
-            <span class="collapsible-text"><span class="collapsible-icon">+</span> Chat istifadə edərək avtomobilin özü-özünü necə diaqnostika etmək olar?</span>
+            <span class="collapsible-text"><span class="collapsible-icon">+</span> Qapı tutacağındakı rezin düymənin nömrəsini deyin?</span>
             <span class="arrow"></span>
         </button>
         <div class="content">
-            <p><span style="color: black;">Özü-özünü diaqnostika virtual aparılmır. Üstəlik, internetdə ünsiyyət "canlı" diaqnostikanı əvəz etmir. Əksər hallarda siz fiziki iş görməli olacaqsınız, məsələn: avtomobilin altına girmək, yağ sızmasını yoxlamaq, reduktorda lyuftu ölçmək, avtomobili qaldırıb səs-küyün (uğultunun) haradan gəldiyini eşitmək və s.</span></p>
+            <p><span style="color: black;">TD12594B1A.</span></p>
         </div>
     </div>
 
+    <div class="faq-card">
+        <button class="collapsible">
+            <span class="collapsible-text"><span class="collapsible-icon">+</span> CX7-dən reduktor və mufta uyğun gəlirmi?</span>
+            <span class="arrow"></span>
+        </button>
+        <div class="content">
+            <p><span style="color: black;">Bəli, uyğun gəlir, amma MPS-dən quraşdırmaq daha da yaxşıdır və **özü özünə bloklanır** (əlavə olaraq).</span></p>
+        </div>
+    </div>
 
   </div> </div> <script>
 var coll = document.getElementsByClassName("collapsible");
