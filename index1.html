@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CX-9 TB - Sual-Cavab</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 600px;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            min-height: 100vh;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e0e0e0;
+        }
+
+        .logo {
+            width: 150px;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            color: #d00000; /* Mazda Red */
+            font-size: 1.8em;
+            margin: 5px 0;
+        }
+        
+        h2 {
+            color: #333;
+            font-size: 1.2em;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            padding-left: 10px;
+            border-left: 4px solid #d00000;
+        }
+
+        .button-group {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            display: block;
+            padding: 15px 20px;
+            border-radius: 10px;
+            text-align: center;
+            text-decoration: none;
+            font-weight: 700;
+            transition: background-color 0.3s ease;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .btn-whatsapp {
+            background-color: #25d366;
+            color: white;
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #128c7e;
+        }
+
+        .btn-telegram {
+            background-color: #0088cc;
+            color: white;
+        }
+
+        .btn-telegram:hover {
+            background-color: #005f90;
+        }
+
+        /* FAQ/Accordion Styles */
+        .accordion {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 1em;
+            transition: 0.4s;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            font-weight: 700;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .accordion:hover {
+            background-color: #ccc;
+        }
+
+        .accordion.active {
+            background-color: #d00000;
+            color: white;
+        }
+
+        .accordion:after {
+            content: '\002B'; /* Unicode plus sign */
+            font-size: 1em;
+            color: #777;
+            font-weight: bold;
+        }
+        
+        .accordion.active:after {
+            content: "\2212"; /* Unicode minus sign */
+            color: white;
+        }
+        
+        .accordion.active:after {
+            content: "\2212"; /* Unicode minus sign */
+            color: white;
+        }
+
+        .content {
+            padding: 0 18px;
+            background-color: white;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-out;
+            margin-bottom: 10px;
+            border-radius: 0 0 5px 5px;
+            border-left: 3px solid #d00000;
+        }
+
+        .content p {
+            margin: 10px 0;
+            padding: 0;
+        }
+        
+        .content ul {
+            padding-left: 20px;
+        }
+        
+        .content li {
+            margin-bottom: 5px;
+        }
+        
+        .content a {
+            color: #d00000;
+            text-decoration: none;
+            font-weight: 700;
+        }
+        
+        .content strong {
+            color: #000;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="header">
+            <img src="https://i.postimg.cc/MK7hQ4GD/IMG-20251119-140712-396.jpg" alt="Mazda CX-9 Logo" class="logo">
+            <h1>CX-9 TB</h1>
+            <p>Söhbət Qrupu Mazda CX-9</p>
+        </div>
+
+        <div class="button-group">
+            <a href="https://chat.whatsapp.com/KXNDRzr1JfAEwviBFaAumV?mode=hqrt3" class="btn btn-whatsapp">
+                WhatsApp Chat
+                <span>Söhbət Qrupu</span>
+            </a>
+            <a href="https://t.me/Mazda_CX9_Azerbaijan" class="btn btn-telegram">
+                Telegram Chat
+                <span>Əlavə Söhbət</span>
+            </a>
+        </div>
+
+        <h2>📍 Kontaktlar</h2>
+
+        <button class="accordion">👍 Mazda CX-9 üzrə İxtisaslaşmış Xidmət Məntəqələrinin kontaktları, Bakı</button>
+        <div class="content">
+            <p><strong>+994 77 600 05 10</strong> (Dəyanət Usta) Bakı</p>
+            <p><strong>+994 55 831 71 19</strong> (Fuad Usta) Bakı</p>
+            <p><strong>+994 51 460 96 94</strong> (Faiq Usta) Lənkəran</p>
+        </div>
+        
+        <button class="accordion">➕ Transfer Qutusu (Razdatka) təmiri üzrə ustaların kontaktları</button>
+        <div class="content">
+            <p><strong>+994 55 558 85 80</strong> (Zeynal Usta) Bakı</p>
+        </div>
+
+        <h2>💧 Mayelər</h2>
+
+        <button class="accordion">➕ Mühərrikə hansı yağ tökülməlidir?</button>
+        <div class="content">
+            <p>Nəzərinizə uyğun <strong>"5W30"</strong> (API SL/CF və ILSAС GF-4 və GF-5, ACEA A5/B5 tələbləri). Tam həcm <strong>"5.9L"</strong>, filtr dəyişərkən <strong>"5.2L"</strong>, filtrsiz <strong>"4.7L"</strong>.</p>
+        </div>
+        
+        <button class="accordion">➕ Mühərrikə hansı Soyuducu Maye tökülməlidir?</button>
+        <div class="content">
+            <p>Originalda <strong>"FL22"</strong> (Ford markası) və ya <strong>"G12"</strong>, rəng: <strong>"yaşıl"</strong>. Radiator dəyişdirilərkən 7−8 litr, tam həcm 12 litr.</p>
+            <p>Brendlər: FL22 (original), TCL, Akira, Mobil, Revanol FL22. <strong>"Antifrizə qənaət etmək olmaz"</strong>, alüminiumun oksidləşməsi səbəbindən AGA kimi ucuz məhsulları almayın.</p>
+        </div>
+        
+        <button class="accordion">➕ Sürətlər Qutusuna hansı yağ tökülməlidir?</button>
+        <div class="content">
+            <p>İstənilən <strong>"JWS3309"</strong>. Toyotanın bazardan çıxmasından sonra <strong>"Toyota T4 tövsiyə edilmir"</strong>. Qismən dəyişmə 4 litr, filtr dəyişdirilərkən 8 litr.</p>
+            <p>Brendlər: Toyota T4 (<strong>"tövsiyə edilmir"</strong>), Idemtsu TLX, Ravenol və d.r.</p>
+        </div>
+        
+        <button class="accordion">➕ Sükan Gücləndiricisinə hansı yağ tökülməlidir?</button>
+        <div class="content">
+            <ol>
+                <li>AKPP-dəki ilə eyni. Həcm 2 litr.</li>
+                <li>Mazda Original Oil ATF M-V</li>
+                <li>Mazda Original Oil Dexron M3.</li>
+                <li>GUR üçün <strong>"PSF tipli yağ"</strong> istifadə olunur. Ravenol və digər brendlərdə var.</li>
+            </ol>
+        </div>
+        
+        <button class="accordion">➕ Transfer Qutusuna (Razdatka) hansı yağ tökülməlidir?</button>
+        <div class="content">
+            <p>İstənilən <strong>"75−80W140 GL5"</strong>. Həcm <strong>"550ml/650ml/850ml"</strong>. Brendlər: Revanol, Motul, Castrol, Ravenol.</p>
+        </div>
+        
+        <button class="accordion">➕ Diferensiala (Arxa Reduktor) hansı yağ tökülməlidir?</button>
+        <div class="content">
+            <p><strong>"75−80W90"</strong>, həcm <strong>"1 litr"</strong>. <strong>"Sintetik"</strong>, mineral deyil.</p>
+        </div>
+
+        <h2>🛠 Texniki Suallar</h2>
+
+        <button class="accordion">➕ Yanacaq Sərfi necədir?</button>
+        <div class="content">
+            <p>Sərf asılıdır:</p>
+            <ol>
+                <li>Sürmə tərzi.</li>
+                <li>Yanacaq keyfiyyəti.</li>
+                <li>Forsunkaların və yanacaq sisteminin vəziyyəti.</li>
+                <li>Şamlar, yanacaq korreksiyası (kütləvi hava sərfi sensoru, oksigen sensorları).</li>
+                <li>Hava filtri, drosel (boğaz) klapanı.</li>
+                <li>Silindr-porşen qrupunun (SPQ) vəziyyəti.</li>
+                <li>Əyləc dayaqlarının (suport) vəziyyəti.</li>
+                <li>Şəhər hərəkət dövrü.</li>
+            </ol>
+            <p>Və daha tez-tez 2 maşını müqayisə edərkən ən vacib səbəb **"1-ci bənddir"**. Müzakirə etmək mənasızdır :)</p>
+        </div>
+        
+        <button class="accordion">➕ Kondisionerin drenaj dəliyini necə təmizləməli?</button>
+        <div class="content">
+            <p><a href="https://www.drive2.ru/l/624190278261019593/" target="_blank">Drive2-də məlumat</a></p>
+        </div>
+        
+        <button class="accordion">➕ Uğultunun səbəbini necə tapmalı?</button>
+        <div class="content">
+            <p>Təmir məntəqəsində qaldırıcıda və ya baxış çuxurunda, qollardan tutaraq səs-küyün haradan gəldiyini eşitmək üçün sürətləndirmək lazımdır (bu, reduktordan gəlir, yoxsa yox?).</p>
+            <p>Əgər bunu etməmisinizsə və nasazlığın səbəbini öyrənmək istəyirsinizsə (xüsusan da bizdən soruşmaq istəyirsinizsə). **"Biz fal aça bilərik!"**</p>
+            <p>Sualınız **"maksimum ətraflı"** texniki məlumat ehtiva etməlidir (avtomobilin markası, modeli, nasazlığın təsviri, nə vaxt və necə yaranıb, hansı sürətdə və rejimdə özünü göstərir, bu nasazlığı tapmaq üçün nə etmisiniz və s.).</p>
+            <p>Məsələn: **"Aşağıdan nəsə uğuldayır, deyin görək nə ola bilər?"** kimi sual verməyin. Bizdə telepatiya yoxdur ki, belə məlumatsız suallara cavab verək, buna görə də **"maksimum ətraflı yazın!"**</p>
+        </div>
+        
+        <button class="accordion">➕ Hansı Benzin Nasosu uyğundur?</button>
+        <div class="content">
+            <p>Bosh 580 453 470.</p>
+        </div>
+        
+        <button class="accordion">➕ Yanacaq Filtrləri korpuslarının nömrələri hansılardır?</button>
+        <div class="content">
+            <p><strong>2008-ci il üçün:</strong> CY03-13-ZE0, Masuma MFF-Z423.</p>
+            <p><strong>2012-ci ildən yuxarı üçün:</strong> CA4313ZE0 (<strong>"Yalnız orijinal"</strong> var, analoqu yoxdur).</p>
+            <p>**Mütləq VIN üzrə yoxlayın.**</p>
+        </div>
+        
+        <button class="accordion">➕ Yağ Təzyiqi Sensorunun nömrəsi hansıdır?</button>
+        <div class="content">
+            <p>1F20-18-501B.</p>
+        </div>
+        
+        <button class="accordion">➕ Orijinaldan başqa hansı Mühərrik Paduşkaları qoymaq olar?</button>
+        <div class="content">
+            <p>ME25060H JIKIU — psevdo-hidravlikdir, **"İSTƏNİLƏN"** analoqu götürmək olar. Orijinal kimi olmayacaq, amma uyğundur.</p>
+            <p>ZPSMZ058 NTY, FEBEST.</p>
+        </div>
+        
+        <button class="accordion">➕ Stupiça padşivnikləri nömrələri hansılardır?</button>
+        <div class="content">
+            <p><strong>Ön padşivniklər:</strong> VKBA6849 (SKF), DAC4584W16CS71 (KOYO).</p>
+            <p><strong>Arxa (stuplaya ilə birgə):</strong> 3DACF038D5C (KOYO), HW25015 (JIKIU), MW41506 (MASUMA).</p>
+        </div>
+        
+        <button class="accordion">➕ Arxa Diferensial üçün hansı S/B nömrələri (Saylentblok) uyğundur?</button>
+        <div class="content">
+            <p>HONDA 51391S5A024 (<strong>"dəyişiklik tələb olunur"</strong>)</p>
+            <p>VTR MZ5101R</p>
+        </div>
+        
+        <button class="accordion">🛠 Suport təmiri üçün ehtiyat hissələri</button>
+        <div class="content">
+            <h4>Ön suportların təmiri:</h4>
+            <ul>
+                <li>Əyləc Bəndi (Naklatka): <strong>KASHIYAMA D3142</strong></li>
+                <li>Porşen: <strong>FRENKİT P455304</strong></li>
+                <li>Napravlayuşi (Paleç): <strong>Frenkit 809008</strong></li>
+                <li>Rezinlər: <strong>Mazda L2Y63326Z</strong></li>
+            </ul>
+            <h4>Arxa suportların təmiri:</h4>
+            <ul>
+                <li>Əyləc Bəndi (Naklatka): <strong>Kashiyama D3143H</strong></li>
+                <li>Rezinlər: <strong>Mazda L2Y62646ZA</strong></li>
+                <li>Napravlayuşi (Paleç): <strong>Frenkit 809024</strong></li>
+                <li>Porşen: <strong>FRENKIT P434802</strong></li>
+            </ul>
+        </div>
+
+        <button class="accordion">🔑 Əlavə açarları və immobilayzeri necə proqramlaşdırmaq olar?</button>
+        <div class="content">
+            <p>Kompüter vasitəsilə, <a href="https://forscan.org/" target="_blank">forscan.org</a> proqramı ilə.</p>
+            <p>Genişləndirilmiş lisenziya tələb olunur (2 ay pulsuz verilir).</p>
+            <p>Məlumat: <a href="https://www.drive2.ru/l/583490206091485640/" target="_blank">Drive2-də məlumat</a>.</p>
+        </div>
+        
+        <button class="accordion">⚙️ Hansı əyləc disklərini quraşdırmaq lazımdır? (CX9 2008–2014)</button>
+        <div class="content">
+            <p>1. Əgər **dağlıq soyuq rayonları deyil** — büdcəyə uyğun istənilən disklər: Miles, Masuma, Bosh.</p>
+            <p>2. Əgər **dağlıq və soyuq rayonlarıdırsa** — ATE, Original, Zimerman, Brembo quraşdırmaq daha yaxşıdır.</p>
+            <p>3. P.S. Tayqa pisdir (zəifdir).</p>
+        </div>
+        
+        <button class="accordion">⚙️ CX7-dən reduktor və mufta uyğun gəlirmi?</button>
+        <div class="content">
+            <p>Bəli, uyğun gəlir, amma MPS-dən quraşdırmaq daha da yaxşıdır və **özü özünə bloklanır** (əlavə olaraq).</p>
+        </div>
+        
+        <button class="accordion">⚠️ Əgər 4WD işıq yanıb/sönürsə, nə etməli?</button>
+        <div class="content">
+            <p>1. Diferensialın gövdəsi fırlanma anını ön təkərlər arasında bölür.</p>
+            <p>2. Yükü daha asan olan təkərə ötürür və həmişə güc tətbiq edir.</p>
+            <p>3. Razdatka həmişə fırlanır, kardan valı həmişə hərəkətdədir.</p>
+            <p>4. Arxa təkərlər həmişə fırlanır, onlara fırlanma anının minimum 10%-i həmişə gedir.</p>
+            <p>5. Əgər ön təkərlər sürüşürsə, yaxud bucaq sürəti sensorları, ABS şübhələnirsə, elektromaqnit sıxılır və fırlanma anının 50%-ə qədəri arxaya ötürülür.</p>
+            <p>6. Əgər 2 ön təkər fırlanırsa, mütləq kardandan fırlanma olmalıdır.</p>
+            <p>7. Əgər 4WD daimi yanırsa, deməli, arxa viskomuftaya gedən naqil qırılıb.</p>
+            <p>8. 4WD-nin yanıb-sönməsi, məsələn, sürüşkən yolda qəfil sıçrayış zamanı baş verə bilər; sonra bu səhv keçirsə, bu o demək deyil ki, problem şlislərdədir, bu, elektronika səhvi ola bilər.</p>
+            <p>9. Əgər sürüşmə zamanı 4WD həmişə yanıb-sönürsə və kardandan ön təkərlər fırlanmırsa, şlisləri yoxlamaq lazımdır.</p>
+        </div>
+        
+        <button class="accordion">💧 Razdatka sağ salnikdən yağ sızdırır, nə etməli?</button>
+        <div class="content">
+            <ul>
+                <li>Salnik: <strong>7T4Z-7R284-A</strong></li>
+                <li>Pılnik: <strong>12000699B</strong></li>
+                <li>Yağ: <strong>Ravenol 75W-140</strong></li>
+            </ul>
+        </div>
+        
+        <button class="accordion">🔑 Qapı tutacağındakı rezin düymənin nömrəsini deyin?</button>
+        <div class="content">
+            <p>TD12594B1A.</p>
+        </div>
+        
+        <button class="accordion">🌬️ Mühərrikin soyuducu ventilyatorları səs salır, nə etməli?</button>
+        <div class="content">
+            <p>**Dərhal əvəz etmək lazımdır.** Dəstlər (motorlar): <a href="https://sl.aliexpress.ru/p?key=XmNEZDF" target="_blank">AliExpress-də məlumat</a>. Diametr bərkidicilərsiz: 10.5, bərkidicilərlə: 12.5, hündürlük: 7.5.</p>
+            <p>Həmçinin generator təmiri servisinə gedib, kolcu presləyib, təmizləyib, ola bilsin fırçaları (şotka) dəyişdirmək olar.</p>
+        </div>
+        
+        <button class="accordion">⚙️ Mazda CX-9 üçün hansı yay (prujin) analoqları mövcuddur?</button>
+        <div class="content">
+            <p><strong>Nömrələr:</strong></p>
+            <ul>
+                <li><strong>XP MZ213F</strong> — ön. Orijinal nömrə: <strong>TD76-34-011C</strong>.</li>
+                <li><strong>XP MZ214R</strong> — arxa. Orijinal nömrə: <strong>TD13-28-011</strong>.</li>
+            </ul>
+            <p><strong>RockAuto-da:</strong> <strong>81628 MOOG</strong> — arxa, <strong>81629 MOOG</strong> — ön.</p>
+            <p><strong>MEVOTECH:</strong> <strong>SMS81629</strong> — ön, <strong>SMS81628</strong> — arxa.</p>
+        </div>
+
+        <button class="accordion">⚙️ Hansı vakuum gücləndiricisi analoqları mövcuddur?</button>
+        <div class="content">
+            <p><strong>Orijinal Nömrələr:</strong> BA1Z2005A, BA1Z2005AVX, BT4Z2005A, AT4Z2005A, AT4Z2005AFC, BA1Z2005AFC, 8T4Z2005A.</p>
+            <p><strong>Analoji Nömrələr:</strong> CARDONE 5472020, MOTORCRAFT BRB48, MAZDA TDY14380ZA.</p>
+            <p><strong>Vacib:</strong> Analoq tapan olmayıb və almayıb. **Hər kəs orijinal quraşdırır.**</p>
+        </div>
+        
+        <button class="accordion">⛽ Yanacağın səviyyəsi düzgün göstərilmirsə, nə etməli?</button>
+        <div class="content">
+            <p>1. Cihaz panelini test edin (bax yuxarıda necə etməli).</p>
+            <p>2. Tam doldurun və cihaz panelinin necə davrandığına baxın.</p>
+            <p>Yanacaq səviyyəsi sensorları müqavimət əsasında yoxlanılır. Əgər səviyyə sensorlarının diaqnostikası nəticə vermirsə, deməli problem cihaz panelindədir.</p>
+        </div>
+        
+        <button class="accordion">❄️ Hansı və nə qədər soyuducu qaz (freon) lazımdır?</button>
+        <div class="content">
+            <p>R-134a, 660–710 qr.</p>
+        </div>
+
+        <button class="accordion">⚙️ Hansı orijinal şüşə silən (dvornik) rezinləri mövcuddur?</button>
+        <div class="content">
+            <ul>
+                <li>**Ön sol rezin:** EG21-67-333.</li>
+                <li>**Ön sağ rezin:** TD12-67-333.</li>
+                <li>**Arxa rezin:** G22E-67-333.</li>
+            </ul>
+        </div>
+
+        <button class="accordion">❓ Chat istifadə edərək avtomobilin özü-özünü necə diaqnostika etmək olar?</button>
+        <div class="content">
+            <p>Özü-özünü diaqnostika virtual aparılmır. Üstəlik, internetdə ünsiyyət "canlı" diaqnostikanı əvəz etmir.</p>
+            <p>Əksər hallarda siz fiziki iş görməli olacaqsınız, məsələn: avtomobilin altına girmək, yağ sızmasını yoxlamaq, reduktorda lyuftu ölçmək, avtomobili qaldırıb səs-küyün (uğultunun) haradan gəldiyini eşitmək və s.</p>
+        </div>
+
+        </div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight) {
+                    content.style.maxHeight = null;
+                } else {
+                    content.style.maxHeight = content.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+</body>
+</html>
